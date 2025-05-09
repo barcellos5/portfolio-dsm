@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@700&display=swap');
+
+:root {
+  --cor-clara: #FDFDFD;
+  --cor-media: #DDDDDD;
+  --cor-suporte: #96E3EA;
+  --cor-destaque: #22AEAE;
+  --cor-secundaria: #218282;
+  --cor-terciaria: #24857B;
+  --cor-profunda: #245959;
+  --cor-alerta: #B2201D;
+  --cor-texto-pequeno: #1B0E09;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: var(--cor-clara);
+  color: var(--cor-texto-pequeno);
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--cor-profunda);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.topbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.topbar a:hover {
+  color: var(--cor-suporte);
+}
+
+.cover {
+  background: var(--cor-media);
+  color: var(--cor-profunda);
+  height: 75vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.cover-text {
+  max-width: 60%;
+}
+
+.cover h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  margin: 0;
+  color: var(--cor-profunda);
+}
+
+.cover h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  margin: 10px 0;
+  color: var(--cor-profunda);
+}
+
+.profile-box {
+  position: absolute;
+  bottom: 25%;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+
+.profile-photo {
+  width: 75px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sobre {
+  background: var(--cor-secundaria);
+}
+
+#eventos {
+  background: var(--cor-media);
+}
+
+#projetos {
+  background: var(--cor-secundaria);
+}
+
+#design-digital {
+  background: var(--cor-media);
+}
+
+#iniciacao-cientifica {
+  background: var(--cor-secundaria);
+}
+
+#sobre, 
+#eventos, 
+#projetos, 
+#design-digital, 
+#iniciacao-cientifica {
+  margin: 0;
+  max-width: 100%;
+}
+
+section {
+  min-height: 100vh;
+  padding: 60px 20px 20px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--cor-profunda);
+}
+
+.card {
+  background: var(--cor-clara);
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid var(--cor-suporte);
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: var(--cor-texto-pequeno);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.bento-grid .card h4 {
+  font-family: 'Oswald', sans-serif;
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: var(--cor-profunda);
+}
+
+.bento-grid .card a {
+  text-decoration: none;
+  color: var(--cor-alerta);
+}
+
+.bento-grid .card a:hover h4 {
+  color: var(--cor-suporte);
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: none;
+  transition: opacity 1s;
+}
+
+.carousel img.active {
+  display: block;
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  background: var(--cor-media);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.buttons button:hover,
+.buttons button.active {
+  background: var(--cor-suporte);
+  transform: scale(1.1);
+}
+
+.galeria-text {
+  flex: 1;
+  padding-left: 20px;
+  color: var(--cor-texto-pequeno);
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.sobre-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sobre-right p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: var(--cor-texto-pequeno);
+  text-align: right;
+}
+
+.sobre-right .profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sobre-right .profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#design-digital .bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-flow: dense;
+  gap: 15px;
+}
+
+#design-digital .card {
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-clara);
+  border: 1px solid var(--cor-suporte);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#design-digital .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#design-digital .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--cor-suporte);
+}
+
+#design-digital .card h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  color: var(--cor-profunda);
+  text-align: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background: var(--cor-clara);
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: var(--cor-profunda);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+footer {
+  background: var(--cor-profunda);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Remove margens e padding da página */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container geral dos pôsteres */
+.poster-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background: var(--cor-clara);
+}
+
+/* Pôsteres de projetos */
+.poster {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+  border: 1px solid var(--cor-suporte);
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--cor-media);
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.poster h3 {
+  margin: 10px 0;
+  color: var(--cor-escura);
+}
+
+.poster p {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* Ajustes na seção do grupo de pesquisa */
+#grupo {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+#grupo h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+#grupo p {
+  margin: 8px 0 0 0;
+  font-size: 0.95em;
+}
+
+/* Texto descritivo da iniciação científica */
+.ic-descricao {
+  color: var(--cor-clara);
+  font-size: 1em;
+  margin: 10px 0 30px 0;
+  max-width: 900px;
+}
+
+/* Grid menor para iniciação científica */
+.iniciacao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Imagens pequenas na iniciação científica */
+.ic-img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Botão padrão para cards */
+.botao {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: var(--cor-destaque);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botao:hover {
+  background: var(--cor-profunda);
+}

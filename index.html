@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Nome do Aluno</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/componentes/css/style.css">
+  <script defer src="src/componentes/js/scripts.js"></script>
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="#sobre">Sobre</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#design-digital">Design</a>
+    <a href="#iniciacao-cientifica">Pesquisa</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <div class="cover">
+    <div class="cover-text">
+      <h1>Portfólio</h1>
+      <h2>Desenvolvimento Multiplataforma</h2>
+      <div class="profile-box">
+        <div class="content">
+          <div class="circle"><a href="#sobre" title="Ir para Sobre"></a></div>
+          <div class="info">
+            <p>Estudante de Desenvolvimento de Software Multiplataforma. Este portfólio reúne projetos e experiências acadêmicas e profissionais.</p>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <h3>Nome do Aluno</h3>
+    <div class="sobre-grid">
+      <div class="sobre-left">
+        <div class="bento-grid">
+          <div class="card sobre-card" data-index="0">
+            <h3>Atividades Extracurriculares e Liderança Acadêmica</h3>
+          </div>
+          <div class="card sobre-card" data-index="1">
+            <h3>Cursos de Extensão</h3>
+          </div>
+          <div class="card sobre-card" data-index="2">
+            <h3>Idiomas</h3>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-right">
+        <p>Graduanda em Tecnologia de Desenvolvimento de Software Multiplataforma pela Faculdade de Tecnologia Itaquera Prof. 
+          Miguel Reale (FATEC Itaquera); formação prevista para o final do primeiro semestre de 2025. Possui conhecimentos no desenvolvimento de aplicações Web 
+          - Design Digital, Experiência do Usuário, Prototipação; Mobile desenvolvimento Android - Linguagem Java - e desenvolvimento React-Native.</p>
+        <div class="profile-photo">
+          <img src="src/imagens/perfil1.jpeg" alt="Foto do Aluno">
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section id="eventos">
+    <div class="section-title"></div>
+    <h2>Participação em Eventos</h2>
+    <div class="carousel">
+      <img src="src/imagens/eventos/bienalUne.jpeg" class="active" alt="Evento 1" data-index="0">
+      <img src="src/imagens/eventos/jornadaAcademicaFatecItaquera.jpeg" alt="Evento 2" data-index="1">
+      <img src="src/imagens/eventos/recepcaoCalouros20242-2-DA.jpeg" alt="Evento 3" data-index="2">
+      <img src="src/imagens/eventos/diretorioAcademico.jpeg" alt="Evento 4" data-index="3">
+      <img src="src/imagens/eventos/simposioFatecSP.jpeg" alt="Evento 5" data-index="4">
+    </div>
+    <div class="controls">
+      <div class="buttons">
+        <button data-index="0"></button>
+        <button data-index="1"></button>
+        <button data-index="2"></button>
+        <button data-index="3"></button>
+        <button data-index="4"></button>
+      </div>
+      <div class="galeria-text">
+        <h3>Galeria de Eventos</h3>
+        <p id="descricao"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="section-title"></div>
+    <h2>Projetos</h2>
+    <div class="bento-grid">
+      <div class="card"><a href="src/views/projeto1.html"><img src="src/imagens/projetos/LojaDeBrinquedos/loja-de-brinquedos.png" style="width:100%; border-radius:5px;"><h4>Loja de Brinquedos</h4></a></div>
+      <div class="card"><a href="src/views/projeto2.html"><img src="src/imagens/projetos/siteTematico/capaSiteBorboletaas.png" style="width:100%; border-radius:5px;"><h4>Site Temático</h4></a></div>
+      <div class="card"><a href="src/views/projeto3.html"><img src="src/imagens/projetos/miniProjetosReactNative/miniProjetosReactNative.jpg" style="width:100%; border-radius:5px;"><h4>Mini Projetos React-Native</h4></a></div>
+      <div class="card"><a href="src/views/projeto4.html"><img src="src/imagens/projetos/portfolioReact-native/portfolio-React-native.png" style="width:100%; border-radius:5px;"><h4>Portfolio React-Native</h4></a></div>
+      <div class="card"><a href="src/views/projeto5.html"><img src="src/imagens/projetos/RedeSocialminhaCinemoteca/rede-social-minha-cinemoteca.png" style="width:100%; border-radius:5px;"><h4>Rede Social Minha Cinemoteca</h4></a></div>
+    </div>
+  </section>
+
+  <section id="design-digital">
+    <div class="section-title"></div>
+      <h2>Portfólio</h2>
+      <h3>de Design Digital</h3>
+    <div class="bento-grid">
+      <div class="card design-card" data-index="0">
+        <img src="src/imagens/designDigital/duplaExposição/DuplaExposicaoPatricia.png">
+        <h4>Dupla Exposição</h4>
+      </div>
+      <div class="card design-card" data-index="1">
+        <img src="src/imagens/designDigital/campanhas/CampanhaMotivacionalPatricia.png">
+        <h4>Campanha Motivacional</h4>
+      </div>
+      <div class="card design-card" data-index="2">
+        <img src="src/imagens/designDigital/logos/logo_CoresEscolha_S86.svg">
+        <h4>Logo Identidade Pessoal</h4>
+      </div>
+      <div class="card design-card" data-index="3">
+        <img src="src/imagens/designDigital/campanhas/GifComercial_3S.gif">
+        <h4>Gif Comercial</h4>
+      </div>
+      <div class="card design-card" data-index="4">
+        <img src="src/imagens/designDigital/mockups/siteFate.png">
+        <h4>Mockup Site Fatec</h4>
+      </div>
+      <div class="card design-card" data-index="5">
+        <img src="src/imagens/designDigital/projetoFinalDeExperienciaDoUsuario/projetoFinalUX.jpg">
+        <h4>Projeto UX</h4>
+      </div>
+    </div>
+  </section>
+
+    <!-- Modal -->
+    <div id="eventoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+  
+    <div id="designModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="designModalBody"></div>
+      </div>
+    </div>
+
+<section id="iniciacao-cientifica">
+  <div class="section-title"></div>
+  <h2>Projetos de Iniciação Científica</h2>
+  <p class="ic-descricao">Trabalhos desenvolvidos no Grupo de Óptica e Aplicações da Fatec Itaquera, com foco em análise óptica, fotoelasticidade e eficiência energética.</p>
+
+  <div class="bento-grid iniciacao-grid">
+    <div class="card">
+      <h3>Fotoelasticidade em Solos</h3>
+      <img src="src/imagens/ic/polarisccopio.png" alt="Fotoelasticidade" class="ic-img">
+      <p>Contrastação entre texturas de solos arenosos e argilosos usando fotoelasticidade e análise gráfica computacional.</p>
+      <a href="src/views/iniciacao-cientifica.html" class="botao">Ver Detalhes</a>
+    </div>
+
+    <div class="card">
+      <h3>Eficiência de Sensores Fotovoltaicos</h3>
+      <img src="src/imagens/ic/projeto11.png" alt="Sensores Fotovoltaicos" class="ic-img">
+      <p>Análise experimental da eficiência de células fotovoltaicas submetidas a diferentes faixas do espectro visível.</p>
+      <a href="src/views/iniciacao-cientifica.html" class="botao">Ver Detalhes</a>
+    </div>
+  </div>
+</section>
+
+  <footer id="contato">
+    <p>
+      <a href="mailto:barcellos.patricia@gmail.com" style="color:#fff; text-decoration:none;">barcellos.patricia@gmail.com</a>
+    </p>
+    <p>
+      <a href="src/arquivos/infocurriculo.pdf" target="_blank" style="color:#fff; text-decoration:none;">Info Currículo</a> | 
+      <a href="https://lattes.cnpq.br/2100135805166934" target="_blank" style="color:#fff; text-decoration:none;">Currículo Lattes</a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/patr%C3%ADcia-barcellos-a3243b1b0/" target="_blank" style="color:#fff; text-decoration:none;">LinkedIn</a> | 
+      <a href="https://github.com/barcellos5" target="_blank" style="color:#fff; text-decoration:none;">GitHub</a> | 
+      <a href="https://www.instagram.com/patriciabarcellos9/" target="_blank" style="color:#fff; text-decoration:none;">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
